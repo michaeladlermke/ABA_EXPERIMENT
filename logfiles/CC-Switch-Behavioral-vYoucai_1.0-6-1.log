@@ -1,0 +1,70 @@
+Scenario - CC-Switch-Behavioral_Youcai_eyetracker
+Logfile written - 04/10/2016 12:04:31
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+jjj	1	Picture	blank	13496	0	1	166	1	0	next	other	0
+jjj	2	Picture	fixation	13662	0	1	10155	1	0	next	other	0
+jjj	3	Picture	Run1/Block9:1- Repeat-T1-3	23818	0	1	109711	1	0	next	hit	4
+jjj	3	Response	1	133368	109551	0
+jjj	4	Picture	correct	133528	0	1	10156	1	0	next	other	0
+jjj	5	Picture	blank	143684	0	1	166	1	0	next	other	0
+jjj	6	Picture	fixation	143851	0	1	10155	1	0	next	other	0
+jjj	7	Picture	Run1/Block9:2- Novel-T2-562	154006	0	1	6326	1	0	next	miss	0
+jjj	7	Response	1	160254	6247	0
+jjj	8	Picture	incorrect	160332	0	1	10155	1	0	next	other	0
+jjj	9	Picture	blank	170488	0	1	166	1	0	next	other	0
+jjj	10	Picture	fixation	170654	0	1	10155	1	0	next	other	0
+jjj	11	Picture	Run1/Block9:3- Repeat-T2-21	180810	0	1	333	1	0	next	hit	14
+jjj	11	Response	2	180968	158	0
+jjj	12	Picture	correct	181143	0	1	10155	1	0	next	other	0
+jjj	13	Picture	blank	191298	0	1	167	1	0	next	other	0
+jjj	14	Picture	fixation	191464	0	1	10155	1	0	next	other	0
+jjj	14	Response	2	197424	5960	0
+jjj	14	Response	1	200459	8995	0
+jjj	15	Picture	Run1/Block9:4- Novel-T2-508	201620	0	1	25805	1	0	next	miss	0
+jjj	15	Response	1	227295	25676	0
+jjj	16	Picture	incorrect	227424	0	1	10155	1	0	next	other	0
+jjj	17	Picture	blank	237580	0	1	166	1	0	next	other	0
+jjj	18	Picture	fixation	237746	0	1	10155	1	0	next	other	0
+jjj	19	Picture	Run1/Block9:5- Repeat-T1-4	247902	0	1	8491	1	0	next	miss	0
+jjj	19	Response	2	256280	8378	0
+jjj	20	Picture	incorrect	256392	0	1	10155	1	0	next	other	0
+jjj	21	Picture	blank	266548	0	1	166	1	0	next	other	0
+jjj	22	Picture	fixation	266714	0	1	10155	1	0	next	other	0
+jjj	23	Picture	Run1/Block9:6- Repeat-T1-11	276869	0	1	17980	1	0	next	hit	31
+jjj	23	Response	1	294710	17841	0
+jjj	24	Picture	correct	294849	0	1	10155	1	0	next	other	0
+jjj	25	Picture	blank	305005	0	1	166	1	0	next	other	0
+jjj	26	Picture	fixation	305171	0	1	10155	1	0	next	other	0
+jjj	27	Picture	Run1/Block9:7- Novel-T2-427	315327	0	1	79911	1	0	next	hit	36
+jjj	27	Response	2	395171	79844	0
+jjj	28	Picture	correct	395238	0	1	10155	1	0	next	other	0
+jjj	29	Picture	blank	405393	0	1	166	1	0	next	other	0
+jjj	30	Picture	fixation	405559	0	1	10155	1	0	next	other	0
+jjj	31	Picture	Run1/Block9:8- Novel-T2-670	415715	0	1	27969	1	0	next	hit	41
+jjj	31	Response	2	443534	27819	0
+jjj	32	Picture	correct	443684	0	1	10155	1	0	next	other	0
+jjj	33	Picture	blank	453839	0	1	166	1	0	next	other	0
+jjj	34	Picture	fixation	454006	0	1	10155	1	0	next	other	0
+jjj	35	Picture	Run1/Block9:9- Novel-T1-265	464161	0	1	53773	1	0	next	hit	46
+jjj	35	Response	1	517832	53672	0
+jjj	36	Picture	correct	517934	0	1	10155	1	0	next	other	0
+jjj	37	Picture	blank	528090	0	1	166	1	0	next	other	0
+jjj	38	Picture	fixation	528256	0	1	10155	1	0	next	other	0
+jjj	39	Picture	Run1/Block9:10- Repeat-T2-13	538412	0	1	13651	1	0	next	hit	51
+jjj	39	Response	2	551967	13556	0
+jjj	40	Picture	correct	552063	0	1	10155	1	0	next	other	0
+jjj	41	Picture	blank	562218	0	1	166	1	0	next	other	0
+jjj	42	Picture	fixation	562385	0	1	10155	1	0	next	other	0
+jjj	43	Picture	Run1/Block9:11- Novel-T2-400	572540	0	1	14151	1	0	next	miss	0
+jjj	43	Response	1	586565	14024	0
+jjj	44	Picture	incorrect	586691	0	1	10155	1	0	next	other	0
+jjj	45	Picture	blank	596847	0	1	167	1	0	next	other	0
+jjj	46	Picture	fixation	597013	0	1	10155	1	0	next	other	0
+jjj	47	Picture	Run1/Block9:12- Repeat-T1-6	607168	0	1	10821	1	0	next	miss	0
+jjj	47	Response	2	617943	10775	0
+jjj	48	Picture	incorrect	617990	0	1	10155	1	0	next	other	0
+jjj	49	Picture	blank	628144	0	1	167	1	0	next	other	0
+jjj	50	Picture	fixation	628311	0	1	8440	1	0	next	other	0
+jjj	50	Quit		630555	2244	NA

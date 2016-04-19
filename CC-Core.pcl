@@ -1,0 +1,479 @@
+string version = get_sdl_variable("Version");
+
+array <bitmap> t[3][5];  		# [Direction][Color]
+array <bitmap> l[4][4];  		# [Direction][Color]
+array <int> tcolor[8][6]; 		# Color to make the T in this position 
+array <int> colorbucket[4]; 	# Keep track of colors used
+array <int> repeat_x[720][12];
+array <int> repeat_y[720][12];
+array <int> repeat_color[720][12];
+array <int> repeat_orient[720][12];
+
+int numblocksperrun = int(get_sdl_variable("num_blocks_per_run"));
+int totalruns = int(get_sdl_variable("total_runs"));
+int num_lists = int(get_sdl_variable("num_lists"));
+
+int break_duration = int(get_sdl_variable("break_duration"));		# seconds
+
+array <string> subject_parts[1];
+preset string Subject;
+preset int CurrentRun=1;
+
+# Ask for starting block
+preset int StartingBlock = 1;
+
+if (StartingBlock < 1) then
+	StartingBlock = 0; #GO TO PRACTICE RUN
+elseif (StartingBlock > 28) then
+	StartingBlock = 1;
+end;
+
+
+
+int list_size = 672;
+array <int> pseudo_list[672];
+
+# T's and L's
+
+
+
+t[1][1] = tlr;
+t[1][2] = tlg;
+t[1][3] = tlb;
+t[1][4] = tly;
+t[2][1] = trr;
+t[2][2] = trg;
+t[2][3] = trb;
+t[2][4] = try;
+t[3][5] = flashGray;
+
+l[1][1] = l0r;
+l[1][2] = l0g;
+l[1][3] = l0b;
+l[1][4] = l0y;
+l[2][1] = l1r;
+l[2][2] = l1g;
+l[2][3] = l1b;
+l[2][4] = l1y;
+l[3][1] = l2r;
+l[3][2] = l2g;
+l[3][3] = l2b;
+l[3][4] = l2y;
+l[4][1] = l3r;
+l[4][2] = l3g;
+l[4][3] = l3b;
+l[4][4] = l3y;
+
+int X; 
+int Y;
+int color;
+int old;
+int list;
+int listletter;
+string lett="X-";
+int testlist;
+int la=1;
+int pulse=6;
+int blockoff; # To keep track of the block offset when looping
+
+output_file coord_file = new output_file;
+
+sub bool text_to_bool(string a) begin
+	bool b = false;
+	if a == "true" then
+		b = true;
+	end;
+	return b;
+end;
+
+bool debug = text_to_bool(get_sdl_variable("debug"));
+bool debug_takescreenshots = text_to_bool(get_sdl_variable("debug_takescreenshots"));
+
+bool eye_tracker_version = text_to_bool(get_sdl_variable("eye_tracker"));
+include "CC-EyeTracker.pcl";
+
+if eye_tracker_version then
+	init_trigger_device();
+end;
+
+#output_file debug = new output_file;
+if debug then
+#	debug.open("debug.txt", true );
+end;
+
+sub debug_print(string msg) begin
+	if debug then
+		term.print(msg + "\n");
+	end;
+end;
+
+sub debug_screencap(int run, int block, int trial_num, int type) begin
+	display_device.screenshot(scenario_directory + Subject + "-R" + string(run) + "B" + string(block) + "-T" + string(trial_num) + "_" + string(type) + ".bmp");
+end;
+
+
+
+## CHUNOLD -- KEEP
+sub int chunold ( int number ) begin
+	int correct;
+	
+	#correct = random(1,2);
+	correct = repeat_orient[number][12];
+	
+	#coord_file.print(string(number) + "\t");
+	
+	exp_picture.set_part(12,t[repeat_orient[number][12]][repeat_color[number][12]]); 
+   exp_picture.set_part_x(12,repeat_x[number][12]); 
+   exp_picture.set_part_y(12,repeat_y[number][12]);
+
+   coord_file.print(string(repeat_x[number][12]) + " , " + string(repeat_y[number][12]) + "\t");
+   
+	loop int i = 1; until i > 11 begin
+      exp_picture.set_part(i,l[repeat_orient[number][i]][repeat_color[number][i]]); 
+      exp_picture.set_part_x(i,repeat_x[number][i]); 
+      exp_picture.set_part_y(i,repeat_y[number][i]);
+      
+      coord_file.print(string(repeat_x[number][i]) + " , " + string(repeat_y[number][i]) + "\t");
+      
+      i = i + 1;
+   end;
+   
+   coord_file.print("\n");
+   return correct;
+end; 
+
+
+## CHUNOLD -- KEEP
+sub int chunold_10 ( int number ) begin
+	int correct_10;
+	
+	#correct = random(1,2);
+	correct_10 = repeat_orient[number][12];
+	
+	#coord_file.print(string(number) + "\t");
+	
+	#exp_picture_10.set_part(12,t[3][5]); 
+	exp_picture1.set_part(12,t[repeat_orient[number][12]][repeat_color[number][12]]); 
+	
+   exp_picture_10.set_part_x(12,repeat_x[number][12]); 
+   exp_picture_10.set_part_y(12,repeat_y[number][12]);
+   exp_picture1.set_part_x(12,repeat_x[number][12]); 
+   exp_picture1.set_part_y(12,repeat_y[number][12]);
+
+   coord_file.print(string(repeat_x[number][12]) + " , " + string(repeat_y[number][12]) + "\t");
+   
+	loop int i = 1; until i > 11 begin
+      exp_picture_10.set_part(i,l[repeat_orient[number][i]][repeat_color[number][i]]); 
+      exp_picture1.set_part(i,l[repeat_orient[number][i]][repeat_color[number][i]]); 
+      exp_picture_10.set_part_x(i,repeat_x[number][i]); 
+      exp_picture_10.set_part_y(i,repeat_y[number][i]);
+      exp_picture1.set_part_x(i,repeat_x[number][i]); 
+      exp_picture1.set_part_y(i,repeat_y[number][i]);
+      
+      coord_file.print(string(repeat_x[number][i]) + " , " + string(repeat_y[number][i]) + "\t");
+      
+      i = i + 1;
+   end;
+   
+   coord_file.print("\n");
+   return correct_10;
+end; 
+
+
+
+output_file out = new output_file;
+output_file out_b = new output_file;
+output_file out_c = new output_file;
+
+output_file out_rand_1 = new output_file;
+output_file out_rand_2 = new output_file;
+output_file out_rand_3 = new output_file;
+output_file out_rand_4 = new output_file;
+output_file out_rand_5 = new output_file;
+output_file out_rand_6 = new output_file;
+output_file out_rand_7 = new output_file;
+output_file out_rand_8 = new output_file;
+output_file out_rand_9 = new output_file;
+output_file out_rand_10 = new output_file;
+output_file out_rand_11 = new output_file;
+
+input_file in = new input_file;
+
+
+
+## LOAD LIST -- KEEP
+sub load_list(int number) begin
+	in.open(scenario_directory + "stimlist.txt");
+	loop int i=1; until i>list_size begin
+		pseudo_list[i] = in.get_int();
+		i = i + 1;
+	end;
+	in.close();
+end;
+
+
+
+## LOAD SUBJECT DATA -- KEEP
+sub load_subject_data(string label) begin
+	
+	string progress_file = scenario_directory + "stimcoord.txt";
+
+	debug_print("Loading from: " + progress_file);
+	if(file_exists(progress_file)) then
+		in.open(progress_file);
+		loop int i=1; until i>8 begin
+			loop int j=1; until j>6 begin
+				tcolor[i][j]= in.get_int();
+				debug_print("tcolor["+string(i)+"]["+string(j)+"] = "+string(tcolor[i][j]));
+				j=j+1;
+			end;
+			i=i+1;
+		end;
+		
+		loop int i=1; until i>720 begin
+			loop int j=1; until j>12 begin
+				repeat_x[i][j] = in.get_int();
+				repeat_y[i][j] = in.get_int();
+				repeat_color[i][j] = in.get_int();
+				
+				debug_print("["+string(i)+"]["+string(j)+"] x=" + string(repeat_x[i][j]) + " y=" + string(repeat_y[i][j]) + " color=" + string(repeat_color[i][j]));
+				#if j!=12 then
+					repeat_orient[i][j] = in.get_int();		
+					debug_print("orient=" + string(repeat_orient[i][j]));
+				#end;
+				j=j+1;
+			end;
+			i=i+1;
+		end;
+	else
+		term.print("Could not find progress file '" + progress_file + "'\nCannot continue");
+		exit();
+	end;
+	in.close();
+end;
+
+
+
+## RUN BLOCK -- KEEP
+# This run block is run every block except block ten
+sub run_block(int run, int block, int trial_num_start) begin
+
+	int trial_num = trial_num_start;
+	
+	int exp_trial_correct_resp = 0;
+	response_data last;
+ 
+	loop int j=1; until j>24 begin
+		debug_print("Trial #" + string(j) + ": " + string(pseudo_list[trial_num]));
+		if(pseudo_list[trial_num]!=0) then
+			if eye_tracker_version then 
+				blank.present();
+				short_fixation.present(); 
+			end;
+			
+				exp_trial_correct_resp = chunold(pseudo_list[trial_num]);
+				exp_event.set_target_button(exp_trial_correct_resp);
+				
+				
+
+				if ( (pseudo_list[trial_num] >= 1) && (pseudo_list[trial_num] <= 12 ) ) then
+					exp_event.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- Repeat-T1-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 13) && (pseudo_list[trial_num] <= 24 ) ) then
+					exp_event.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- Repeat-T2-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 25) && (pseudo_list[trial_num] <= 36 ) ) then
+					exp_event.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- Switch-T1-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 37) && (pseudo_list[trial_num] <= 48 ) ) then
+					exp_event.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- Switch-T2-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 49) && (pseudo_list[trial_num] <= 372 ) ) then
+					exp_event.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- Novel-T1-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 373) && (pseudo_list[trial_num] <= 696 ) ) then
+					exp_event.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- Novel-T2-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 697) && (pseudo_list[trial_num] <= 708 ) ) then
+					exp_event.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- NovelRecog-T1-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 709) && (pseudo_list[trial_num] <= 720 ) ) then
+					exp_event.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- NovelRecog-T2-" + string(pseudo_list[trial_num]));
+				end;	
+
+
+				
+				if eye_tracker_version  then send_trigger_code(start_trial); end;
+				exp_trial.present();
+				
+				#if(debug_takescreenshots) then
+				#	debug_screencap(run,block,j,pseudo_list[trial_num]);
+				#end;
+				
+				last = response_manager.last_response_data();
+
+				if (last.button() == exp_trial_correct_resp) then
+					if eye_tracker_version then send_trigger_code(2); end;
+					correct_trial.present();
+				else
+					if eye_tracker_version then send_trigger_code(2); end;
+					wrong_trial.present();
+					if eye_tracker_version then send_trigger_code(end_trial); end;
+				end;
+					
+				if eye_tracker_version then send_trigger_code(end_trial); end;
+				
+		else
+			if eye_tracker_version then 
+				full_blank.present();
+			else
+				fixation.present();
+			end;
+		end;
+		j = j + 1;
+		trial_num = trial_num + 1;
+	end;
+end;
+
+
+## RUN BLOCK -- KEEP
+# This run block is for only block ten
+sub run_block_10(int run, int block, int trial_num_start) begin
+
+	int trial_num = trial_num_start;
+	
+	int exp_trial_correct_resp = 0;
+	response_data last;
+ 
+	loop int j=1; until j>24 begin
+		debug_print("Trial #" + string(j) + ": " + string(pseudo_list[trial_num]));
+		if(pseudo_list[trial_num]!=0) then
+			if eye_tracker_version then 
+				blank.present();
+				short_fixation.present(); 
+			end;
+				#at this point, call chunold_10 (in CC_Core.pcl), which is only for block ten
+				exp_trial_correct_resp = chunold_10(pseudo_list[trial_num]);
+				exp_event_10.set_target_button(exp_trial_correct_resp);
+				
+				
+
+				if ( (pseudo_list[trial_num] >= 1) && (pseudo_list[trial_num] <= 12 ) ) then
+					exp_event_10.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- Repeat-T1-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 13) && (pseudo_list[trial_num] <= 24 ) ) then
+					exp_event_10.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- Repeat-T2-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 25) && (pseudo_list[trial_num] <= 36 ) ) then
+					exp_event_10.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- Switch-T1-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 37) && (pseudo_list[trial_num] <= 48 ) ) then
+					exp_event_10.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- Switch-T2-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 49) && (pseudo_list[trial_num] <= 372 ) ) then
+					exp_event_10.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- Novel-T1-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 373) && (pseudo_list[trial_num] <= 696 ) ) then
+					exp_event_10.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- Novel-T2-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 697) && (pseudo_list[trial_num] <= 708 ) ) then
+					exp_event_10.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- NovelRecog-T1-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 709) && (pseudo_list[trial_num] <= 720 ) ) then
+					exp_event_10.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- NovelRecog-T2-" + string(pseudo_list[trial_num]));
+				end;	
+
+
+				
+				if eye_tracker_version  then send_trigger_code(start_trial); end;
+				exp_trial_10.present();
+				
+				#if(debug_takescreenshots) then
+				#	debug_screencap(run,block,j,pseudo_list[trial_num]);
+				#end;
+				
+				last = response_manager.last_response_data();
+
+				if (last.button() == exp_trial_correct_resp) then
+					if eye_tracker_version then send_trigger_code(2); end;
+					correct_trial.present();
+				else
+					if eye_tracker_version then send_trigger_code(2); end;
+					wrong_trial.present();
+					if eye_tracker_version then send_trigger_code(end_trial); end;
+				end;
+					
+				if eye_tracker_version then send_trigger_code(end_trial); end;
+				
+		else
+			if eye_tracker_version then 
+				full_blank.present();
+			else
+				fixation.present();
+			end;
+		end;
+		j = j + 1;
+		trial_num = trial_num + 1;
+	end;
+end;
+
+
+
+
+## RUN BLOCK RECOG -- KEEP
+sub run_block_recog(int run, int block, int trial_num_start) begin
+
+	int trial_num = trial_num_start;
+	
+	int exp_trial_correct_resp = 0;
+	response_data last;
+ 
+	loop int j=1; until j>24 begin
+		debug_print("Trial #" + string(j) + ": " + string(pseudo_list[trial_num]));
+		if(pseudo_list[trial_num]!=0) then
+			if eye_tracker_version then 
+				blank.present();
+				short_fixation.present(); 
+			end;
+			
+				exp_trial_correct_resp = chunold(pseudo_list[trial_num]);
+				exp_event.set_target_button(exp_trial_correct_resp);
+				
+				
+
+				if ( (pseudo_list[trial_num] >= 1) && (pseudo_list[trial_num] <= 12 ) ) then
+					exp_event.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- Repeat-T1-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 13) && (pseudo_list[trial_num] <= 24 ) ) then
+					exp_event.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- Repeat-T2-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 25) && (pseudo_list[trial_num] <= 36 ) ) then
+					exp_event.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- Switch-T1-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 37) && (pseudo_list[trial_num] <= 48 ) ) then
+					exp_event.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- Switch-T2-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 49) && (pseudo_list[trial_num] <= 372 ) ) then
+					exp_event.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- Novel-T1-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 373) && (pseudo_list[trial_num] <= 696 ) ) then
+					exp_event.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- Novel-T2-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 697) && (pseudo_list[trial_num] <= 708 ) ) then
+					exp_event.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- NovelRecog-T1-" + string(pseudo_list[trial_num]));
+				elseif ( (pseudo_list[trial_num] >= 709) && (pseudo_list[trial_num] <= 720 ) ) then
+					exp_event.set_event_code("Run" + string(run) + "/Block" + string(block)+":"+string(j)+"- NovelRecog-T2-" + string(pseudo_list[trial_num]));
+				end;	
+
+
+
+				if eye_tracker_version  then send_trigger_code(start_trial); end;
+				exp_trial.present();
+				
+				#if(debug_takescreenshots) then
+				#	debug_screencap(run,block,j,pseudo_list[trial_num]);
+				#end;
+				
+				last = response_manager.last_response_data();
+
+				#if (last.button() == exp_trial_correct_resp) then
+				#	correct_trial.present();
+				#else
+				#	wrong_trial.present();
+				#end;
+					
+				if eye_tracker_version then send_trigger_code(end_trial); end;
+				
+		else
+			if eye_tracker_version then 
+				full_blank.present();
+			else
+				fixation.present();
+			end;
+		end;
+		j = j + 1;
+		trial_num = trial_num + 1;
+	end;
+end;
+
+

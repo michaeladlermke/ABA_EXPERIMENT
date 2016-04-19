@@ -1,0 +1,15 @@
+int start_trial = 1;
+int end_trial = 100;
+dio_device trigger_port;
+
+sub init_trigger_device begin
+	trigger_port = new dio_device(memory_dio_device, 888, 3);
+	trigger_port.write_byte(3, 3) ;
+	trigger_port.write_byte(1, end_trial) ;
+	#calibration_screen.present() ;
+	trigger_port.write_byte(3, 0) ;  
+end;
+	
+sub send_trigger_code ( int code ) begin
+	trigger_port.write_byte(1,code);
+end;

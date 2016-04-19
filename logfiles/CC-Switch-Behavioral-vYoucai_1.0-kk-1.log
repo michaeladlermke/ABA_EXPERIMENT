@@ -1,0 +1,776 @@
+Scenario - CC-Switch-Behavioral_Youcai_eyetracker
+Logfile written - 04/18/2016 21:11:58
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+jkl	1	Picture	blank	13995	0	1	167	1	0	next	other	0
+jkl	2	Picture	fixation	14162	0	1	10322	1	0	next	other	0
+jkl	3	Picture	Run1/Block0:1- Repeat-T1-3	24484	0	1	15982	1	0	next	hit	4
+jkl	3	Response	1	40327	15844	0
+jkl	4	Picture	correct	40466	0	1	10155	1	0	next	other	0
+jkl	4	Response	1	44087	3621	0
+jkl	4	Response	1	49131	8665	0
+jkl	5	Picture	blank	50621	0	1	166	1	0	next	other	0
+jkl	6	Picture	fixation	50788	0	1	8324	1	0	next	other	0
+jkl	6	Response	1	53711	2923	0
+jkl	6	Response	3	59053	8266	0
+jkl	7	Picture	Run1/Block0:2- Novel-T2-562	59112	0	1	1665	1	0	next	miss	0
+jkl	7	Response	1	60662	1551	0
+jkl	8	Picture	incorrect	60777	0	1	10155	1	0	next	other	0
+jkl	8	Response	3	61832	1056	0
+jkl	8	Response	1	62936	2159	0
+jkl	8	Response	3	63871	3094	0
+jkl	8	Response	1	65041	4264	0
+jkl	8	Response	3	65896	5119	0
+jkl	8	Response	1	67146	6369	0
+jkl	8	Response	3	67697	6921	0
+jkl	8	Response	1	69254	8477	0
+jkl	8	Response	3	69739	8962	0
+jkl	9	Picture	blank	70932	0	1	166	1	0	next	other	0
+jkl	9	Response	1	71029	97	0
+jkl	10	Picture	fixation	71098	0	1	666	1	0	next	other	0
+jkl	10	Response	3	71606	508	0
+jkl	11	Picture	Run1/Block0:3- Repeat-T2-21	71764	0	1	1165	1	0	next	miss	0
+jkl	11	Response	1	72895	1131	0
+jkl	12	Picture	incorrect	72930	0	1	10155	1	0	next	other	0
+jkl	12	Response	3	73519	589	0
+jkl	12	Response	1	74720	1790	0
+jkl	12	Response	3	75393	2463	0
+jkl	12	Response	1	76535	3605	0
+jkl	12	Response	3	76999	4069	0
+jkl	12	Response	1	78326	5397	0
+jkl	12	Response	3	78767	5837	0
+jkl	12	Response	1	80164	7234	0
+jkl	12	Response	3	80711	7781	0
+jkl	12	Response	1	82185	9255	0
+jkl	12	Response	3	82499	9570	0
+jkl	13	Picture	blank	83085	0	1	166	1	0	next	other	0
+jkl	14	Picture	fixation	83252	0	1	1498	1	0	next	other	0
+jkl	14	Response	1	84029	778	0
+jkl	14	Response	3	84620	1369	0
+jkl	15	Picture	Run1/Block0:4- Novel-T2-508	84750	0	1	1498	1	0	next	miss	0
+jkl	15	Response	1	86073	1323	0
+jkl	16	Picture	incorrect	86248	0	1	10155	1	0	next	other	0
+jkl	16	Response	3	86515	267	0
+jkl	16	Response	1	87842	1593	0
+jkl	16	Response	3	88566	2317	0
+jkl	16	Response	1	89737	3489	0
+jkl	16	Response	3	90442	4194	0
+jkl	16	Response	1	91788	5540	0
+jkl	16	Response	3	92400	6152	0
+jkl	16	Response	1	93603	7354	0
+jkl	16	Response	3	94481	8233	0
+jkl	16	Response	1	95512	9264	0
+jkl	17	Picture	blank	96404	0	1	166	1	0	next	other	0
+jkl	18	Response	3	96482	69	0
+jkl	18	Picture	fixation	96570	156	1	166	1	0	next	other	0
+jkl	19	Picture	Run1/Block0:5- Repeat-T1-4	96737	0	1	832	1	0	next	hit	63
+jkl	19	Response	1	97416	680	0
+jkl	20	Picture	correct	97569	0	1	10155	1	0	next	other	0
+jkl	20	Response	3	98316	747	0
+jkl	20	Response	1	99249	1680	0
+jkl	20	Response	3	100217	2648	0
+jkl	20	Response	1	100909	3340	0
+jkl	20	Response	3	102053	4484	0
+jkl	20	Response	1	102658	5089	0
+jkl	20	Response	3	103770	6201	0
+jkl	20	Response	1	104541	6972	0
+jkl	20	Response	3	105687	8118	0
+jkl	20	Response	1	106614	9045	0
+jkl	20	Response	3	107585	10016	0
+jkl	21	Picture	blank	107724	0	1	166	1	0	next	other	0
+jkl	22	Picture	fixation	107891	0	1	1831	1	0	next	other	0
+jkl	22	Response	1	108586	695	0
+jkl	22	Response	3	109578	1688	0
+jkl	23	Picture	Run1/Block0:6- Repeat-T1-11	109722	0	1	832	1	0	next	hit	81
+jkl	23	Response	1	110514	792	0
+jkl	24	Picture	correct	110554	0	1	10155	1	0	next	other	0
+jkl	24	Response	3	111423	868	0
+jkl	24	Response	1	112355	1801	0
+jkl	24	Response	3	113259	2704	0
+jkl	24	Response	1	114248	3693	0
+jkl	24	Response	3	115026	4471	0
+jkl	24	Response	1	116057	5502	0
+jkl	24	Response	3	116897	6343	0
+jkl	24	Response	1	117931	7376	0
+jkl	24	Response	3	118858	8304	0
+jkl	24	Response	1	119792	9237	0
+jkl	25	Picture	blank	120710	0	1	166	1	0	next	other	0
+jkl	26	Response	3	120730	10	0
+jkl	26	Picture	fixation	120876	156	1	167	1	0	next	other	0
+jkl	27	Picture	Run1/Block0:7- Novel-T2-427	121043	0	1	666	1	0	next	miss	0
+jkl	27	Response	1	121555	513	0
+jkl	28	Picture	incorrect	121709	0	1	10155	1	0	next	other	0
+jkl	28	Response	3	122700	991	0
+jkl	28	Response	1	123481	1772	0
+jkl	28	Response	3	124601	2893	0
+jkl	28	Response	1	125290	3582	0
+jkl	28	Response	3	126433	4725	0
+jkl	28	Response	1	127162	5453	0
+jkl	28	Response	3	128360	6651	0
+jkl	28	Response	1	129231	7522	0
+jkl	28	Response	3	130200	8491	0
+jkl	28	Response	1	131054	9346	0
+jkl	29	Picture	blank	131864	0	1	166	1	0	next	other	0
+jkl	30	Response	3	131929	54	0
+jkl	30	Picture	fixation	132031	156	1	167	1	0	next	other	0
+jkl	31	Picture	Run1/Block0:8- Novel-T2-670	132197	0	1	832	1	0	next	miss	0
+jkl	31	Response	1	132977	780	0
+jkl	32	Picture	incorrect	133030	0	1	10155	1	0	next	other	0
+jkl	32	Response	3	133833	803	0
+jkl	32	Response	1	134833	1804	0
+jkl	32	Response	3	135770	2740	0
+jkl	32	Response	1	136760	3730	0
+jkl	32	Response	3	137844	4814	0
+jkl	32	Response	1	138836	5806	0
+jkl	32	Response	3	139740	6711	0
+jkl	32	Response	1	140748	7718	0
+jkl	32	Response	3	141681	8652	0
+jkl	32	Response	1	142717	9688	0
+jkl	33	Picture	blank	143185	0	1	167	1	0	next	other	0
+jkl	34	Picture	fixation	143351	0	1	333	1	0	next	other	0
+jkl	34	Response	3	143506	155	0
+jkl	35	Picture	Run1/Block0:9- Novel-T1-265	143684	0	1	999	1	0	next	hit	129
+jkl	35	Response	1	144590	906	0
+jkl	36	Picture	correct	144683	0	1	10155	1	0	next	other	0
+jkl	36	Response	3	145451	768	0
+jkl	36	Response	1	146453	1770	0
+jkl	36	Response	3	147392	2709	0
+jkl	36	Response	1	148325	3642	0
+jkl	36	Response	3	149150	4467	0
+jkl	36	Response	1	150298	5615	0
+jkl	36	Response	3	151257	6574	0
+jkl	36	Response	1	152158	7475	0
+jkl	36	Response	3	153001	8318	0
+jkl	36	Response	1	153956	9273	0
+jkl	37	Picture	blank	154839	0	1	167	1	0	next	other	0
+jkl	38	Response	3	154891	43	0
+jkl	38	Picture	fixation	155005	156	1	166	1	0	next	other	0
+jkl	39	Picture	Run1/Block0:10- Repeat-T2-13	155172	0	1	666	1	0	next	miss	0
+jkl	39	Response	1	155793	621	0
+jkl	40	Picture	incorrect	155837	0	1	10155	1	0	next	other	0
+jkl	40	Response	3	156733	895	0
+jkl	40	Response	1	157690	1852	0
+jkl	40	Response	3	158696	2859	0
+jkl	40	Response	1	159530	3693	0
+jkl	40	Response	3	160519	4682	0
+jkl	40	Response	1	161394	5557	0
+jkl	40	Response	3	162466	6628	0
+jkl	40	Response	1	163247	7409	0
+jkl	40	Response	3	164388	8551	1
+jkl	40	Response	1	165087	9250	0
+jkl	41	Picture	blank	165993	0	1	166	1	0	next	other	0
+jkl	42	Picture	fixation	166159	0	1	167	1	0	next	other	0
+jkl	42	Response	3	166275	115	0
+jkl	43	Picture	Run1/Block0:11- Novel-T2-400	166326	0	1	666	1	0	next	miss	0
+jkl	43	Response	1	166900	574	0
+jkl	44	Picture	incorrect	166992	0	1	10155	1	0	next	other	0
+jkl	44	Response	3	168142	1151	0
+jkl	44	Response	1	168823	1831	0
+jkl	44	Response	3	170110	3119	0
+jkl	44	Response	1	170870	3878	0
+jkl	44	Response	3	172083	5091	0
+jkl	44	Response	1	172842	5850	0
+jkl	44	Response	3	173879	6887	0
+jkl	44	Response	1	174882	7890	0
+jkl	44	Response	3	175816	8825	0
+jkl	44	Response	1	176752	9760	0
+jkl	45	Picture	blank	177147	0	1	166	1	0	next	other	0
+jkl	46	Picture	fixation	177314	0	1	499	1	0	next	other	0
+jkl	46	Response	3	177689	375	0
+jkl	47	Picture	Run1/Block0:12- Repeat-T1-6	177813	0	1	999	1	0	next	hit	177
+jkl	47	Response	1	178649	836	0
+jkl	48	Picture	correct	178812	0	1	10155	1	0	next	other	0
+jkl	48	Response	3	179452	640	0
+jkl	48	Response	1	180589	1777	0
+jkl	48	Response	3	181558	2746	0
+jkl	48	Response	1	182458	3646	0
+jkl	48	Response	3	183421	4609	0
+jkl	48	Response	1	184438	5627	0
+jkl	48	Response	3	185449	6637	0
+jkl	48	Response	1	186507	7695	0
+jkl	48	Response	3	187285	8473	0
+jkl	48	Response	1	188481	9669	0
+jkl	49	Picture	blank	188967	0	1	166	1	0	next	other	0
+jkl	50	Picture	fixation	189134	0	1	166	1	0	next	other	0
+jkl	50	Response	3	189261	127	0
+jkl	51	Picture	Run1/Block0:13- Novel-T2-535	189300	0	1	1165	1	0	next	miss	0
+jkl	51	Response	1	190347	1047	0
+jkl	52	Picture	incorrect	190466	0	1	10155	1	0	next	other	0
+jkl	52	Response	3	191231	765	0
+jkl	52	Response	1	192416	1951	0
+jkl	52	Response	3	193254	2788	0
+jkl	52	Response	1	194240	3774	0
+jkl	52	Response	3	195357	4892	0
+jkl	52	Response	1	196313	5847	0
+jkl	52	Response	3	197347	6881	0
+jkl	52	Response	1	198288	7822	0
+jkl	52	Response	3	199403	8938	0
+jkl	52	Response	1	200227	9762	0
+jkl	53	Picture	blank	200621	0	1	166	1	0	next	other	0
+jkl	54	Picture	fixation	200787	0	1	666	1	0	next	other	0
+jkl	54	Response	3	201401	614	0
+jkl	55	Picture	Run1/Block0:14- Repeat-T1-7	201453	0	1	999	1	0	next	hit	209
+jkl	55	Response	1	202275	822	0
+jkl	56	Picture	correct	202452	0	1	10155	1	0	next	other	0
+jkl	56	Response	3	203422	969	0
+jkl	56	Response	1	204250	1798	0
+jkl	56	Response	3	205343	2891	0
+jkl	56	Response	1	206279	3827	0
+jkl	56	Response	3	207472	5020	0
+jkl	56	Response	1	208507	6055	0
+jkl	56	Response	3	209434	6981	0
+jkl	56	Response	1	210402	7949	0
+jkl	56	Response	3	211356	8904	0
+jkl	56	Response	1	212294	9842	0
+jkl	57	Picture	blank	212608	0	1	166	1	0	next	other	0
+jkl	58	Picture	fixation	212774	0	1	666	1	0	next	other	0
+jkl	58	Response	3	213278	504	0
+jkl	59	Picture	Run1/Block0:15- Novel-T2-373	213440	0	1	999	1	0	next	miss	0
+jkl	59	Response	1	214269	830	0
+jkl	60	Picture	incorrect	214439	0	1	10155	1	0	next	other	0
+jkl	60	Response	3	215236	797	0
+jkl	60	Response	1	216213	1774	0
+jkl	60	Response	3	217252	2813	0
+jkl	60	Response	1	218151	3713	0
+jkl	60	Response	3	219188	4749	0
+jkl	60	Response	1	220124	5686	0
+jkl	60	Response	3	221167	6728	0
+jkl	60	Response	1	222232	7793	0
+jkl	60	Response	3	223190	8751	0
+jkl	60	Response	1	224171	9733	0
+jkl	61	Picture	blank	224594	0	1	166	1	0	next	other	0
+jkl	62	Picture	fixation	224761	0	1	499	1	0	next	other	0
+jkl	62	Response	3	225164	403	0
+jkl	63	Picture	Run1/Block0:16- Novel-T2-643	225260	0	1	1165	1	0	next	miss	0
+jkl	63	Response	1	226246	985	0
+jkl	64	Picture	incorrect	226426	0	1	10155	1	0	next	other	0
+jkl	64	Response	3	227006	580	0
+jkl	64	Response	1	228280	1854	0
+jkl	64	Response	3	229047	2622	0
+jkl	64	Response	1	230247	3821	0
+jkl	64	Response	3	231053	4627	0
+jkl	64	Response	1	232266	5840	0
+jkl	64	Response	3	232947	6521	0
+jkl	64	Response	1	234294	7869	0
+jkl	64	Response	3	235054	8628	0
+jkl	64	Response	1	236315	9890	0
+jkl	65	Picture	blank	236581	0	1	167	1	0	next	other	0
+jkl	66	Picture	fixation	236747	0	1	333	1	0	next	other	0
+jkl	66	Response	3	237043	296	0
+jkl	67	Picture	Run1/Block0:17- Novel-T2-454	237080	0	1	1332	1	0	next	miss	0
+jkl	67	Response	1	238292	1212	0
+jkl	68	Picture	incorrect	238412	0	1	10155	1	0	next	other	0
+jkl	68	Response	3	238992	580	0
+jkl	68	Response	1	240153	1741	0
+jkl	68	Response	3	240979	2567	0
+jkl	68	Response	1	242252	3840	0
+jkl	68	Response	3	242934	4522	0
+jkl	68	Response	1	244223	5811	0
+jkl	68	Response	3	245029	6617	0
+jkl	68	Response	1	246271	7859	0
+jkl	68	Response	3	246892	8480	0
+jkl	68	Response	1	248067	9655	0
+jkl	69	Picture	blank	248568	0	1	167	1	0	next	other	0
+jkl	70	Picture	fixation	248734	0	1	499	1	0	next	other	0
+jkl	70	Response	3	249071	337	0
+jkl	71	Picture	Run1/Block0:18- Novel-T2-616	249233	0	1	832	1	0	next	miss	0
+jkl	71	Response	1	250006	773	0
+jkl	72	Picture	incorrect	250066	0	1	10155	1	0	next	other	0
+jkl	72	Response	3	251076	1011	0
+jkl	72	Response	1	252013	1947	0
+jkl	72	Response	3	253150	3084	0
+jkl	72	Response	1	254087	4021	0
+jkl	72	Response	3	255192	5126	0
+jkl	72	Response	1	256341	6275	0
+jkl	72	Response	3	257328	7262	0
+jkl	72	Response	1	258266	8200	0
+jkl	72	Response	3	259345	9279	0
+jkl	73	Picture	blank	260221	0	1	166	1	0	next	other	0
+jkl	73	Response	1	260276	55	0
+jkl	74	Picture	fixation	260388	0	1	832	1	0	next	other	0
+jkl	74	Response	3	261109	721	0
+jkl	75	Picture	Run1/Block0:19- Repeat-T2-14	261220	0	1	999	1	0	next	miss	0
+jkl	75	Response	1	262180	960	0
+jkl	76	Picture	incorrect	262219	0	1	10155	1	0	next	other	0
+jkl	76	Response	3	263219	1000	0
+jkl	76	Response	1	264172	1953	0
+jkl	76	Response	3	265156	2937	0
+jkl	76	Response	1	266095	3876	0
+jkl	76	Response	3	267339	5120	0
+jkl	76	Response	1	268197	5978	0
+jkl	76	Response	3	269414	7195	0
+jkl	76	Response	1	270345	8126	0
+jkl	76	Response	3	271309	9090	0
+jkl	77	Picture	blank	272374	0	1	166	1	0	next	other	0
+jkl	77	Response	1	272401	27	0
+jkl	78	Picture	fixation	272541	0	1	999	1	0	next	other	0
+jkl	78	Response	3	273411	870	0
+jkl	79	Picture	Run1/Block0:20- Repeat-T1-5	273540	0	1	999	1	0	next	hit	305
+jkl	79	Response	1	274448	908	0
+jkl	80	Picture	correct	274539	0	1	10155	1	0	next	other	0
+jkl	80	Response	3	275356	818	0
+jkl	80	Response	1	276291	1752	0
+jkl	80	Response	3	277327	2788	0
+jkl	80	Response	1	278365	3826	0
+jkl	80	Response	3	279372	4833	0
+jkl	80	Response	1	280339	5801	0
+jkl	80	Response	3	281242	6703	0
+jkl	80	Response	1	282275	7736	0
+jkl	80	Response	3	283412	8873	0
+jkl	80	Response	1	284452	9913	0
+jkl	81	Picture	blank	284694	0	1	166	1	0	next	other	0
+jkl	82	Picture	fixation	284860	0	1	666	1	0	next	other	0
+jkl	82	Response	3	285340	480	0
+jkl	83	Picture	Run1/Block0:21- Repeat-T2-24	285526	0	1	999	1	0	next	miss	0
+jkl	83	Response	1	286377	850	0
+jkl	84	Picture	incorrect	286525	0	1	10155	1	0	next	other	0
+jkl	84	Response	3	287414	889	0
+jkl	84	Response	1	288394	1869	0
+jkl	84	Response	3	289385	2860	0
+jkl	84	Response	1	290469	3944	0
+jkl	84	Response	3	291361	4836	0
+jkl	84	Response	1	292445	5919	0
+jkl	84	Response	3	293371	6846	0
+jkl	84	Response	1	294400	7875	0
+jkl	84	Response	3	295378	8852	0
+jkl	84	Response	1	296446	9921	0
+jkl	85	Picture	blank	296681	0	1	166	1	0	next	other	0
+jkl	86	Picture	fixation	296847	0	1	666	1	0	next	other	0
+jkl	86	Response	3	297424	577	0
+jkl	87	Picture	Run1/Block0:22- Repeat-T1-10	297513	0	1	999	1	0	next	hit	337
+jkl	87	Response	1	298456	943	0
+jkl	88	Picture	correct	298512	0	1	10155	1	0	next	other	0
+jkl	88	Response	3	299389	877	0
+jkl	88	Response	1	300539	2027	0
+jkl	88	Response	3	301628	3116	0
+jkl	88	Response	1	302611	4099	0
+jkl	88	Response	3	303649	5137	0
+jkl	88	Response	1	304737	6225	0
+jkl	88	Response	3	305673	7161	0
+jkl	88	Response	1	306970	8458	0
+jkl	88	Response	3	307829	9317	0
+jkl	89	Picture	blank	308667	0	1	166	1	0	next	other	0
+jkl	90	Picture	fixation	308834	0	1	1165	1	0	next	other	0
+jkl	90	Response	1	309041	207	0
+jkl	90	Response	3	309902	1068	0
+jkl	91	Picture	Run1/Block0:23- Novel-T1-157	309999	0	1	1165	1	0	next	hit	353
+jkl	91	Response	1	311045	1046	0
+jkl	92	Picture	correct	311165	0	1	10155	1	0	next	other	0
+jkl	92	Response	3	311901	736	0
+jkl	92	Response	1	313037	1872	0
+jkl	92	Response	3	314238	3073	0
+jkl	92	Response	1	315059	3894	0
+jkl	92	Response	3	316232	5068	0
+jkl	92	Response	1	317233	6069	0
+jkl	92	Response	3	318167	7003	0
+jkl	92	Response	1	319238	8074	0
+jkl	92	Response	3	320241	9077	0
+jkl	92	Response	1	321279	10115	0
+jkl	93	Picture	blank	321320	0	1	166	1	0	next	other	0
+jkl	94	Picture	fixation	321486	0	1	832	1	0	next	other	0
+jkl	94	Response	3	322248	761	0
+jkl	95	Picture	Run1/Block0:24- Repeat-T2-20	322319	0	1	998	1	0	next	miss	0
+jkl	95	Response	1	323206	887	0
+jkl	96	Picture	incorrect	323317	0	1	10156	1	0	next	other	0
+jkl	96	Response	3	324394	1077	0
+jkl	96	Response	1	325124	1807	0
+jkl	96	Response	3	326396	3079	0
+jkl	96	Response	1	327252	3935	0
+jkl	96	Response	3	328336	5019	0
+jkl	96	Response	1	329370	6053	0
+jkl	96	Response	3	330260	6943	0
+jkl	96	Response	1	331299	7982	0
+jkl	96	Response	3	332264	8947	0
+jkl	96	Response	1	333374	10057	0
+jkl	97	Picture	blank	333473	0	1	166	1	0	next	other	0
+jkl	98	Picture	fixation	333640	0	1	832	1	0	next	other	0
+jkl	98	Response	3	334355	715	0
+jkl	99	Picture	Run1/Block0:1- Novel-T2-455	334472	0	1	1165	1	0	next	miss	0
+jkl	99	Response	1	335492	1021	0
+jkl	100	Picture	incorrect	335637	0	1	10155	1	0	next	other	0
+jkl	100	Response	3	336384	746	0
+jkl	100	Response	1	337670	2032	0
+jkl	100	Response	3	338492	2854	0
+jkl	100	Response	1	339704	4066	0
+jkl	100	Response	3	340575	4937	0
+jkl	100	Response	1	341983	6346	0
+jkl	100	Response	3	342653	7015	0
+jkl	100	Response	1	344002	8365	0
+jkl	100	Response	3	344732	9095	0
+jkl	101	Picture	blank	345793	0	1	167	1	0	next	other	0
+jkl	102	Picture	fixation	345959	0	1	999	1	0	next	other	0
+jkl	102	Response	1	346030	70	0
+jkl	102	Response	3	346834	875	0
+jkl	103	Picture	Run1/Block0:2- Repeat-T2-24	346958	0	1	1332	1	0	next	miss	0
+jkl	103	Response	1	348148	1190	0
+jkl	104	Picture	incorrect	348290	0	1	10155	1	0	next	other	0
+jkl	104	Response	3	348910	620	0
+jkl	104	Response	1	350179	1889	0
+jkl	104	Response	3	351146	2856	0
+jkl	104	Response	1	352253	3963	0
+jkl	104	Response	3	353127	4837	0
+jkl	104	Response	1	354477	6187	0
+jkl	104	Response	3	355134	6844	0
+jkl	104	Response	1	356486	8196	0
+jkl	104	Response	3	357129	8839	0
+jkl	105	Picture	blank	358445	0	1	166	1	0	next	other	0
+jkl	105	Response	1	358523	78	0
+jkl	106	Picture	fixation	358612	0	1	832	1	0	next	other	0
+jkl	106	Response	3	359283	671	0
+jkl	107	Picture	Run1/Block0:3- Novel-T2-644	359444	0	1	1165	1	0	next	miss	0
+jkl	107	Response	1	360553	1109	0
+jkl	108	Picture	incorrect	360610	0	1	10155	1	0	next	other	0
+jkl	108	Response	3	361279	670	0
+jkl	108	Response	1	362628	2019	0
+jkl	108	Response	3	363433	2824	0
+jkl	108	Response	1	364858	4249	0
+jkl	108	Response	3	365635	5025	0
+jkl	108	Response	1	366854	6244	0
+jkl	108	Response	3	367812	7203	0
+jkl	108	Response	1	369112	8502	0
+jkl	108	Response	3	369889	9279	0
+jkl	109	Picture	blank	370765	0	1	166	1	0	next	other	0
+jkl	110	Picture	fixation	370931	0	1	999	1	0	next	other	0
+jkl	110	Response	1	371346	414	0
+jkl	110	Response	3	371803	871	0
+jkl	111	Picture	Run1/Block0:4- Repeat-T2-13	371930	0	1	1665	1	0	next	miss	0
+jkl	111	Response	1	373416	1486	0
+jkl	112	Picture	incorrect	373595	0	1	10155	1	0	next	other	0
+jkl	112	Response	3	373991	396	0
+jkl	112	Response	1	375533	1938	0
+jkl	112	Response	3	376063	2468	0
+jkl	112	Response	1	377699	4104	0
+jkl	112	Response	3	378129	4534	0
+jkl	112	Response	1	379683	6087	0
+jkl	112	Response	3	380130	6535	0
+jkl	112	Response	1	381769	8174	0
+jkl	112	Response	3	382276	8681	0
+jkl	113	Picture	blank	383750	0	1	166	1	0	next	other	0
+jkl	114	Picture	fixation	383917	0	1	499	1	0	next	other	0
+jkl	114	Response	1	384000	83	0
+jkl	114	Response	3	384356	439	0
+jkl	115	Picture	Run1/Block0:5- Novel-T2-590	384416	0	1	1665	1	0	next	miss	0
+jkl	115	Response	1	385945	1528	0
+jkl	116	Picture	incorrect	386081	0	1	10155	1	0	next	other	0
+jkl	116	Response	3	386432	351	0
+jkl	116	Response	1	388459	2378	0
+jkl	116	Response	3	388923	2842	0
+jkl	116	Response	1	390680	4599	0
+jkl	116	Response	3	391025	4944	0
+jkl	116	Response	1	392755	6674	0
+jkl	116	Response	3	393067	6986	0
+jkl	116	Response	1	394789	8707	0
+jkl	116	Response	3	394969	8888	0
+jkl	117	Picture	blank	396236	0	1	166	1	0	next	other	0
+jkl	118	Picture	fixation	396403	0	1	666	1	0	next	other	0
+jkl	118	Response	1	396761	358	0
+jkl	118	Response	3	397002	599	0
+jkl	119	Picture	Run1/Block0:6- Repeat-T1-5	397069	0	1	1665	1	0	next	hit	465
+jkl	119	Response	1	398670	1601	0
+jkl	120	Picture	correct	398734	0	1	10155	1	0	next	other	0
+jkl	120	Response	3	400538	1804	0
+jkl	120	Response	1	401159	2426	0
+jkl	120	Response	3	403478	4744	0
+jkl	120	Response	1	403687	4953	0
+jkl	120	Response	3	405554	6820	0
+jkl	120	Response	1	405868	7134	0
+jkl	120	Response	3	407580	8847	0
+jkl	120	Response	1	408011	9277	0
+jkl	121	Picture	blank	408889	0	1	166	1	0	next	other	0
+jkl	122	Picture	fixation	409056	0	1	499	1	0	next	other	0
+jkl	122	Response	3	409362	306	0
+jkl	123	Picture	Run1/Block0:7- Repeat-T1-6	409555	0	1	666	1	0	next	hit	479
+jkl	123	Response	1	410088	533	0
+jkl	124	Picture	correct	410221	0	1	10155	1	0	next	other	0
+jkl	124	Response	3	411419	1198	0
+jkl	124	Response	1	412296	2075	0
+jkl	124	Response	3	413700	3479	0
+jkl	124	Response	1	414445	4224	0
+jkl	124	Response	3	415695	5474	0
+jkl	124	Response	1	416515	6295	0
+jkl	124	Response	3	417450	7229	0
+jkl	124	Response	1	418545	8324	0
+jkl	124	Response	3	419580	9359	0
+jkl	125	Picture	blank	420376	0	1	167	1	0	next	other	0
+jkl	126	Picture	fixation	420543	0	1	1165	1	0	next	other	0
+jkl	126	Response	1	420561	18	0
+jkl	126	Response	3	421596	1053	0
+jkl	127	Picture	Run1/Block0:8- Novel-T1-293	421708	0	1	999	1	0	next	hit	495
+jkl	127	Response	1	422536	828	0
+jkl	128	Picture	correct	422707	0	1	10155	1	0	next	other	0
+jkl	128	Response	3	423704	997	0
+jkl	128	Response	1	424561	1854	0
+jkl	128	Response	3	425860	3153	0
+jkl	128	Response	1	426874	4167	0
+jkl	128	Response	3	427907	5200	0
+jkl	128	Response	1	428918	6211	0
+jkl	128	Response	3	429825	7118	0
+jkl	128	Response	1	430941	8234	0
+jkl	128	Response	3	431897	9190	0
+jkl	129	Picture	blank	432862	0	1	166	1	0	next	other	0
+jkl	129	Response	1	433011	149	0
+jkl	130	Picture	fixation	433029	0	1	999	1	0	next	other	0
+jkl	130	Response	3	433970	941	0
+jkl	131	Picture	Run1/Block0:9- Repeat-T2-20	434028	0	1	999	1	0	next	miss	0
+jkl	131	Response	1	434907	879	0
+jkl	132	Picture	incorrect	435027	0	1	10155	1	0	next	other	0
+jkl	132	Response	3	435944	917	0
+jkl	132	Response	1	436848	1821	0
+jkl	132	Response	3	438018	2991	0
+jkl	132	Response	1	439053	4026	0
+jkl	132	Response	3	440058	5032	0
+jkl	132	Response	1	441026	5999	0
+jkl	132	Response	3	442142	7116	0
+jkl	132	Response	1	443231	8204	0
+jkl	132	Response	3	444268	9241	0
+jkl	133	Picture	blank	445182	0	1	167	1	0	next	other	0
+jkl	133	Response	1	445203	21	0
+jkl	134	Picture	fixation	445349	0	1	998	1	0	next	other	0
+jkl	134	Response	3	446239	891	0
+jkl	135	Picture	Run1/Block0:10- Novel-T1-185	446347	0	1	833	1	0	next	hit	527
+jkl	135	Response	1	447112	765	0
+jkl	136	Picture	correct	447180	0	1	10155	1	0	next	other	0
+jkl	136	Response	3	448397	1217	0
+jkl	136	Response	1	449248	2068	0
+jkl	136	Response	3	450431	3251	0
+jkl	136	Response	1	451421	4241	0
+jkl	136	Response	3	452600	5420	0
+jkl	136	Response	1	453478	6298	0
+jkl	136	Response	3	454669	7489	0
+jkl	136	Response	1	455519	8339	0
+jkl	136	Response	3	456715	9536	0
+jkl	137	Picture	blank	457335	0	1	167	1	0	next	other	0
+jkl	138	Picture	fixation	457502	0	1	1332	1	0	next	other	0
+jkl	138	Response	1	457590	88	0
+jkl	138	Response	3	458764	1263	0
+jkl	139	Picture	Run1/Block0:11- Novel-T1-50	458833	0	1	832	1	0	next	hit	543
+jkl	139	Response	1	459563	730	0
+jkl	140	Picture	correct	459666	0	1	10155	1	0	next	other	0
+jkl	140	Response	3	460838	1172	0
+jkl	140	Response	1	461480	1814	0
+jkl	140	Response	3	462987	3321	0
+jkl	140	Response	1	463561	3896	0
+jkl	140	Response	3	464958	5292	0
+jkl	140	Response	1	465735	6069	0
+jkl	140	Response	3	467029	7363	0
+jkl	140	Response	1	467891	8225	0
+jkl	140	Response	3	469160	9494	0
+jkl	141	Picture	blank	469821	0	1	166	1	0	next	other	0
+jkl	141	Response	1	469970	148	0
+jkl	142	Picture	fixation	469988	0	1	1332	1	0	next	other	0
+jkl	142	Response	3	471161	1174	0
+jkl	143	Picture	Run1/Block0:12- Novel-T1-212	471320	0	1	999	1	0	next	hit	559
+jkl	143	Response	1	472171	852	0
+jkl	144	Picture	correct	472318	0	1	10155	1	0	next	other	0
+jkl	144	Response	3	473206	888	0
+jkl	144	Response	1	474291	1972	0
+jkl	144	Response	3	475531	3212	0
+jkl	144	Response	1	476362	4044	0
+jkl	144	Response	3	477397	5078	0
+jkl	144	Response	1	478468	6150	0
+jkl	144	Response	3	479636	7317	0
+jkl	144	Response	1	480543	8225	0
+jkl	144	Response	3	481682	9364	0
+jkl	145	Picture	blank	482474	0	1	166	1	0	next	other	0
+jkl	145	Response	1	482617	143	0
+jkl	146	Picture	fixation	482640	0	1	1332	1	0	next	other	0
+jkl	146	Response	3	483783	1143	0
+jkl	147	Picture	Run1/Block0:13- Repeat-T2-21	483972	0	1	832	1	0	next	miss	0
+jkl	147	Response	1	484764	792	0
+jkl	148	Picture	incorrect	484805	0	1	10155	1	0	next	other	0
+jkl	148	Response	3	485956	1152	0
+jkl	148	Response	1	486893	2089	0
+jkl	148	Response	3	487975	3171	0
+jkl	148	Response	1	488911	4106	0
+jkl	148	Response	3	490048	5243	0
+jkl	148	Response	1	490988	6184	0
+jkl	148	Response	3	492260	7455	0
+jkl	148	Response	1	493114	8310	0
+jkl	148	Response	3	494467	9662	0
+jkl	149	Picture	blank	494960	0	1	166	1	0	next	other	0
+jkl	150	Picture	fixation	495126	0	1	1498	1	0	next	other	0
+jkl	150	Response	1	495372	246	0
+jkl	150	Response	3	496468	1342	0
+jkl	151	Picture	Run1/Block0:14- Novel-T2-563	496625	0	1	999	1	0	next	miss	0
+jkl	151	Response	1	497445	821	0
+jkl	152	Picture	incorrect	497624	0	1	10155	1	0	next	other	0
+jkl	152	Response	3	498657	1034	0
+jkl	152	Response	1	499651	2027	0
+jkl	152	Response	3	501461	3837	0
+jkl	152	Response	1	501696	4072	0
+jkl	152	Response	3	503869	6246	0
+jkl	152	Response	1	503900	6277	0
+jkl	152	Response	1	505949	8325	0
+jkl	152	Response	3	505973	8349	0
+jkl	153	Picture	blank	507779	0	1	166	1	0	next	other	0
+jkl	154	Picture	fixation	507946	0	1	333	1	0	next	other	0
+jkl	154	Response	1	508127	181	0
+jkl	154	Response	3	508204	259	0
+jkl	155	Picture	Run1/Block0:15- Repeat-T1-3	508278	0	1	1998	1	0	next	hit	606
+jkl	155	Response	1	510123	1845	0
+jkl	156	Picture	correct	510276	0	1	10155	1	0	next	other	0
+jkl	156	Response	3	511130	853	0
+jkl	156	Response	1	512862	2586	0
+jkl	156	Response	3	513931	3655	0
+jkl	156	Response	1	515100	4823	0
+jkl	156	Response	3	516034	5758	0
+jkl	156	Response	1	517252	6976	0
+jkl	156	Response	3	518189	7913	0
+jkl	156	Response	1	519457	9181	0
+jkl	156	Response	3	520391	10115	0
+jkl	157	Picture	blank	520432	0	1	167	1	0	next	other	0
+jkl	158	Picture	fixation	520598	0	1	2164	1	0	next	other	0
+jkl	158	Response	1	521572	974	0
+jkl	158	Response	3	522609	2011	0
+jkl	159	Picture	Run1/Block0:16- Novel-T1-158	522762	0	1	1165	1	0	next	hit	622
+jkl	159	Response	1	523856	1094	0
+jkl	160	Picture	correct	523928	0	1	10155	1	0	next	other	0
+jkl	160	Response	3	524849	921	0
+jkl	160	Response	1	526124	2197	0
+jkl	160	Response	3	527181	3254	0
+jkl	160	Response	1	528270	4342	0
+jkl	160	Response	3	529307	5380	0
+jkl	160	Response	1	530492	6564	0
+jkl	160	Response	3	531324	7396	0
+jkl	160	Response	1	532555	8627	0
+jkl	160	Response	3	533613	9685	0
+jkl	161	Picture	blank	534083	0	1	166	1	0	next	other	0
+jkl	162	Picture	fixation	534250	0	1	1498	1	0	next	other	0
+jkl	162	Response	1	534846	596	0
+jkl	162	Response	3	535635	1386	0
+jkl	163	Picture	Run1/Block0:17- Repeat-T2-19	535748	0	1	1332	1	0	next	miss	0
+jkl	163	Response	1	536921	1174	0
+jkl	164	Picture	incorrect	537080	0	1	10155	1	0	next	other	0
+jkl	164	Response	3	537854	775	0
+jkl	164	Response	1	538791	1711	0
+jkl	164	Response	3	540024	2944	0
+jkl	164	Response	1	541127	4048	0
+jkl	164	Response	3	542165	5085	0
+jkl	164	Response	1	543202	6122	0
+jkl	164	Response	3	544283	7203	0
+jkl	164	Response	1	545322	8242	0
+jkl	164	Response	3	546393	9313	0
+jkl	165	Picture	blank	547235	0	1	166	1	0	next	other	0
+jkl	166	Picture	fixation	547402	0	1	1165	1	0	next	other	0
+jkl	166	Response	1	547608	207	0
+jkl	166	Response	3	548433	1031	0
+jkl	167	Picture	Run1/Block0:18- Repeat-T1-10	548567	0	1	1165	1	0	next	hit	654
+jkl	167	Response	1	549574	1008	0
+jkl	168	Picture	correct	549732	0	1	10155	1	0	next	other	0
+jkl	168	Response	3	550505	773	0
+jkl	168	Response	1	551554	1822	0
+jkl	168	Response	3	552684	2952	0
+jkl	168	Response	1	553723	3991	0
+jkl	168	Response	3	554759	5027	0
+jkl	168	Response	1	555749	6017	0
+jkl	168	Response	3	556783	7050	0
+jkl	168	Response	1	557766	8033	0
+jkl	168	Response	3	558806	9074	0
+jkl	169	Picture	blank	559888	0	1	167	1	0	next	other	0
+jkl	169	Response	1	559976	89	0
+jkl	170	Picture	fixation	560054	0	1	1165	1	0	next	other	0
+jkl	170	Response	3	561185	1131	0
+jkl	171	Picture	Run1/Block0:19- Repeat-T2-16	561220	0	1	999	1	0	next	miss	0
+jkl	171	Response	1	562182	962	0
+jkl	172	Picture	incorrect	562218	0	1	10155	1	0	next	other	0
+jkl	172	Response	3	563365	1146	0
+jkl	172	Response	1	564221	2003	0
+jkl	172	Response	3	565539	3321	0
+jkl	172	Response	1	566276	4058	0
+jkl	172	Response	3	567645	5427	0
+jkl	172	Response	1	568501	6282	0
+jkl	172	Response	3	569741	7522	0
+jkl	172	Response	1	570580	8362	0
+jkl	172	Response	3	571721	9502	0
+jkl	173	Picture	blank	572374	0	1	166	1	0	next	other	0
+jkl	174	Picture	fixation	572540	0	1	1498	1	0	next	other	0
+jkl	174	Response	1	572694	154	0
+jkl	174	Response	3	573870	1329	0
+jkl	175	Picture	Run1/Block0:20- Novel-T2-428	574039	0	1	999	1	0	next	miss	0
+jkl	175	Response	1	574907	869	0
+jkl	176	Picture	incorrect	575037	0	1	10155	1	0	next	other	0
+jkl	176	Response	3	576279	1241	0
+jkl	176	Response	1	576830	1793	0
+jkl	176	Response	3	578458	3421	0
+jkl	176	Response	1	579025	3987	0
+jkl	176	Response	3	580738	5700	0
+jkl	176	Response	1	581337	6299	0
+jkl	176	Response	3	582753	7715	0
+jkl	176	Response	1	583152	8114	0
+jkl	176	Response	3	584622	9584	0
+jkl	177	Picture	blank	585192	0	1	167	1	0	next	other	0
+jkl	177	Response	1	585275	83	0
+jkl	178	Picture	fixation	585359	0	1	1665	1	0	next	other	0
+jkl	178	Response	3	586831	1472	0
+jkl	179	Picture	Run1/Block0:21- Novel-T2-671	587024	0	1	333	1	0	next	miss	0
+jkl	179	Response	1	587318	294	0
+jkl	180	Picture	incorrect	587357	0	1	10155	1	0	next	other	0
+jkl	180	Response	3	588932	1575	0
+jkl	180	Response	1	589495	2138	0
+jkl	180	Response	3	591084	3727	0
+jkl	180	Response	1	591462	4105	0
+jkl	180	Response	3	593225	5868	0
+jkl	180	Response	1	593675	6318	0
+jkl	180	Response	3	595357	8000	0
+jkl	180	Response	1	595773	8416	0
+jkl	180	Response	3	597433	10076	0
+jkl	181	Picture	blank	597512	0	1	167	1	0	next	other	0
+jkl	182	Picture	fixation	597679	0	1	1665	1	0	next	other	0
+jkl	182	Response	1	597789	110	0
+jkl	182	Response	3	599299	1620	0
+jkl	183	Picture	Run1/Block0:22- Repeat-T1-2	599344	0	1	499	1	0	next	hit	718
+jkl	183	Response	1	599792	448	0
+jkl	184	Picture	correct	599843	0	1	10155	1	0	next	other	0
+jkl	184	Response	3	601370	1527	0
+jkl	184	Response	1	601863	2020	0
+jkl	184	Response	3	603549	3706	0
+jkl	184	Response	1	604323	4480	0
+jkl	184	Response	3	605511	5668	0
+jkl	184	Response	1	606139	6296	0
+jkl	184	Response	3	607359	7515	0
+jkl	184	Response	1	608213	8370	0
+jkl	184	Response	3	609397	9554	0
+jkl	185	Picture	blank	609999	0	1	166	1	0	next	other	0
+jkl	185	Response	1	610158	159	0
+jkl	186	Picture	fixation	610165	0	1	1332	1	0	next	other	0
+jkl	186	Response	3	611375	1210	0
+jkl	187	Picture	Run1/Block0:23- Novel-T1-77	611497	0	1	832	1	0	next	hit	734
+jkl	187	Response	1	612153	656	0
+jkl	188	Picture	correct	612329	0	1	10155	1	0	next	other	0
+jkl	188	Response	3	613448	1119	0
+jkl	188	Response	1	614195	1865	0
+jkl	188	Response	3	615469	3140	0
+jkl	188	Response	1	616294	3964	0
+jkl	188	Response	3	617312	4983	0
+jkl	188	Response	1	618417	6087	0
+jkl	188	Response	3	619383	7054	0
+jkl	188	Response	1	620337	8008	0
+jkl	188	Response	3	621372	9043	0
+jkl	188	Response	1	622150	9820	0
+jkl	189	Picture	blank	622485	0	1	166	1	0	next	other	0
+jkl	190	Picture	fixation	622651	0	1	999	1	0	next	other	0
+jkl	190	Response	3	623505	854	0
+jkl	191	Picture	Run1/Block0:24- Repeat-T2-23	623650	0	1	666	1	0	next	miss	0
+jkl	191	Response	1	624282	632	0
+jkl	192	Picture	incorrect	624316	0	1	10155	1	0	next	other	0
+jkl	192	Response	3	625495	1179	0
+jkl	192	Response	1	626298	1983	0
+jkl	192	Response	3	627468	3152	0
+jkl	192	Response	1	628325	4009	0
+jkl	192	Response	3	629542	5226	0
+jkl	192	Response	1	630396	6080	0
+jkl	192	Response	3	631595	7279	0
+jkl	192	Response	1	632515	8199	0
+jkl	192	Response	3	633585	9269	0
+jkl	193	Response	1	634588	116	0
+jkl	193	Response	3	635420	949	0
+jkl	193	Response	1	636508	2036	0
+jkl	193	Response	3	637629	3157	0
+jkl	193	Response	3	712098	77627	0
+jkl	193	Response	3	720573	86102	0
+jkl	194	Picture	blank	734527	0	1	166	1	0	next	other	0
+jkl	195	Picture	fixation	734693	0	1	7159	1	0	next	other	0
+jkl	195	Response	3	741718	7025	0
+jkl	196	Picture	Run1/Block1:1- Repeat-T2-22	741852	0	1	24390	1	0	next	miss	0
+jkl	196	Quit		759888	18037	NA
