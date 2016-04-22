@@ -1,5 +1,5 @@
-<ver>18</ver>
-<efn>C:\Users\youcai\Desktop\Eyetracking\Modified_623\2013-2-20 V2 Greenelab CCeytracker 10-2-12 Youcai 4 Fixed Recog XDAT2 ShortRecog\greene_experiment_eyetrack_011613.exp</efn>
+<ver>18.3</ver>
+<efn>C:\YOUCAI\ABA_EXPERIMENT\greene_experiment_eyetrack_011613.exp</efn>
 <author></author>
 <con>
 <pause>P</pause>
@@ -15,32 +15,32 @@
 </con>
 <dbi></dbi>
 <dbs>button</dbs>
-<ddi>1</ddi>
+<ddi>0</ddi>
 <dds>
 <icm_profile></icm_profile>
 <use_icm>0</use_icm>
 </dds>
-<ddv>ATI Radeon HD 2400 PRO</ddv>
+<ddv>Primary Display Driver</ddv>
 <depchg>1</depchg>
 <discard_windows_messages>0</discard_windows_messages>
 <display_status_window>1</display_status_window>
 <dmd>32</dmd>
-<dmh>1200</dmh>
+<dmh>720</dmh>
 <dmr>60</dmr>
-<dmw>1920</dmw>
+<dmw>1280</dmw>
 <docs>
 <args></args>
 <exfl></exfl>
 <lfn></lfn>
 </docs>
 <dp_list></dp_list>
-<dsd>C:\Users\youcai\Desktop\Eyetracking\Modified_623\2013-2-20 V2 Greenelab CCeytracker 10-2-12 Youcai 4 Fixed Recog XDAT2 ShortRecog</dsd>
-<dxv>6</dxv>
+<dsd>C:\YOUCAI\2015_6_23_CCAB9</dsd>
+<dxv>8</dxv>
 <efs>
-<filename>C:\Users\youcai\Desktop\Eyetracking\Modified_623\2013-2-20 V2 Greenelab CCeytracker 10-2-12 Youcai 4 Fixed Recog XDAT2 ShortRecog\CC-Switch-Behavioral_Youcai_eyetracker.sce</filename>
-<filename>C:\Users\youcai\Desktop\Eyetracking\Modified_623\2013-2-20 V2 Greenelab CCeytracker 10-2-12 Youcai 4 Fixed Recog XDAT2 ShortRecog\CC-Core.sce</filename>
-<filename>C:\Users\youcai\Desktop\Eyetracking\Modified_623\2013-2-20 V2 Greenelab CCeytracker 10-2-12 Youcai 4 Fixed Recog XDAT2 ShortRecog\CC-Core.pcl</filename>
-<filename>C:\Users\youcai\Desktop\Eyetracking\Modified_623\2013-2-20 V2 Greenelab CCeytracker 10-2-12 Youcai 4 Fixed Recog XDAT2 ShortRecog\CC-EyeTracker.pcl</filename>
+<filename>C:\YOUCAI\2015_6_23_CCAB9\CC-Switch-Behavioral_Youcai_eyetracker.sce</filename>
+<filename>C:\YOUCAI\2015_6_23_CCAB9\CC-Core.sce</filename>
+<filename>C:\YOUCAI\2015_6_23_CCAB9\CC-Core.pcl</filename>
+<filename>C:\YOUCAI\2015_6_23_CCAB9\CC-EyeTracker.pcl</filename>
 </efs>
 <exclusive_mouse>1</exclusive_mouse>
 <exp_version></exp_version>
@@ -106,15 +106,16 @@
 </ftp>
 <idc>0</idc>
 <idt>1000</idt>
+<ilc>0</ilc>
 <ip_chans></ip_chans>
-<isb>10000</isb>
-<lfd>C:\Users\youcai\Desktop\Eyetracking\Modified_623\2013-2-20 V2 Greenelab CCeytracker 10-2-12 Youcai 4 Fixed Recog XDAT2 ShortRecog\logfiles</lfd>
+<lfd>C:\YOUCAI\2015_6_23_CCAB9\logfiles</lfd>
 <lnb>2</lnb>
 <lno>0</lno>
 <log>
 <append_counter>0</append_counter>
 <delimiter>9</delimiter>
 <general_list>1</general_list>
+<its>0</its>
 <pien>0</pien>
 <set_def_file></set_def_file>
 <stimulus_list>0</stimulus_list>
@@ -125,50 +126,15 @@
 </log>
 <lol>1</lol>
 <lpr></lpr>
-<maxpv></maxpv>
-<minpv></minpv>
-<mss>4</mss>
+<lsl>0</lsl>
+<maxpv>-1</maxpv>
+<minpv>-1</minpv>
 <nam>green_experiment</nam>
 <one_processor>2</one_processor>
 <oports></oports>
 <out_encrypt_key></out_encrypt_key>
 <pi_list></pi_list>
-<port_devices>
-<device>
-<parameters>
-<cts>0</cts>
-<dsrin>0</dsrin>
-<dsrout>0</dsrout>
-<dtr>disable</dtr>
-<rts>disable</rts>
-<set_fifo>1</set_fifo>
-<spd></spd>
-<spp></spp>
-<spr></spr>
-<sps></sps>
-</parameters>
-<piai>COM1</piai>
-<pian>Serial Port</pian>
-<pihpn>COM1</pihpn>
-</device>
-<device>
-<parameters>
-<cts>0</cts>
-<dsrin>0</dsrin>
-<dsrout>0</dsrout>
-<dtr>disable</dtr>
-<rts>disable</rts>
-<set_fifo>1</set_fifo>
-<spd></spd>
-<spp></spp>
-<spr></spr>
-<sps></sps>
-</parameters>
-<piai>COM3</piai>
-<pian>Serial Port</pian>
-<pihpn>COM3</pihpn>
-</device>
-</port_devices>
+<port_devices></port_devices>
 <rdl>
 <device>
 <abs_axis>
@@ -220,7 +186,7 @@
 <device>
 <device_type>3</device_type>
 <dx_device_type>0</dx_device_type>
-<name>HID Keyboard Device</name>
+<name>Standard PS/2 Keyboard</name>
 </device>
 <device>
 <abs_axis>
@@ -262,7 +228,31 @@
 <dx_device_type>0</dx_device_type>
 <max_raw_pos>65535</max_raw_pos>
 <min_raw_pos>0</min_raw_pos>
-<name>HID-compliant mouse</name>
+<name>Synaptics PS/2 Port TouchPad</name>
+</device>
+<device>
+<device_type>4</device_type>
+<dx_device_type>17</dx_device_type>
+<name>HP Wireless Button Driver</name>
+</device>
+<device>
+<axis>
+<dead_zone>0</dead_zone>
+<max>1000</max>
+<min>-1000</min>
+<name>X-axis</name>
+<saturation>1</saturation>
+</axis>
+<axis>
+<dead_zone>0</dead_zone>
+<max>1000</max>
+<min>-1000</min>
+<name>Y-axis</name>
+<saturation>1</saturation>
+</axis>
+<device_type>6</device_type>
+<dx_device_type>0</dx_device_type>
+<name>gameport device</name>
 </device>
 <device>
 <device_type>9</device_type>
@@ -296,32 +286,94 @@
 <restricted>1</restricted>
 <scale>1</scale>
 </axis>
+<buts>
+<but>
+<from>
+<states>down;</states>
+<type>2</type>
+</from>
+<max_x>
+<inc>1</inc>
+<origin>2</origin>
+<units>2</units>
+<used>0</used>
+<value>0</value>
+</max_x>
+<max_y>
+<inc>1</inc>
+<origin>2</origin>
+<units>2</units>
+<used>0</used>
+<value>0</value>
+</max_y>
+<min_x>
+<inc>1</inc>
+<origin>2</origin>
+<units>2</units>
+<used>0</used>
+<value>0</value>
+</min_x>
+<min_y>
+<inc>1</inc>
+<origin>2</origin>
+<units>2</units>
+<used>0</used>
+<value>0</value>
+</min_y>
+<name>Pointer Down</name>
+<primary>1</primary>
+<to>
+<states>down;</states>
+<type>5</type>
+</to>
+</but>
+<but>
+<from>
+<states>down;</states>
+<type>5</type>
+</from>
+<max_x>
+<inc>1</inc>
+<origin>2</origin>
+<units>2</units>
+<used>0</used>
+<value>0</value>
+</max_x>
+<max_y>
+<inc>1</inc>
+<origin>2</origin>
+<units>2</units>
+<used>0</used>
+<value>0</value>
+</max_y>
+<min_x>
+<inc>1</inc>
+<origin>2</origin>
+<units>2</units>
+<used>0</used>
+<value>0</value>
+</min_x>
+<min_y>
+<inc>1</inc>
+<origin>2</origin>
+<units>2</units>
+<used>0</used>
+<value>0</value>
+</min_y>
+<name>Pointer Up</name>
+<primary>1</primary>
+<to>
+<states>down;</states>
+<type>2</type>
+</to>
+</but>
+</buts>
 <device_type>5</device_type>
 <dx_device_type>0</dx_device_type>
-<inpc>1</inpc>
 <name>pointing device</name>
 <uoh>1</uoh>
 <upc>0</upc>
 <uvt>1</uvt>
-</device>
-<device>
-<axis>
-<dead_zone>0</dead_zone>
-<max>1000</max>
-<min>-1000</min>
-<name>X-axis</name>
-<saturation>1</saturation>
-</axis>
-<axis>
-<dead_zone>0</dead_zone>
-<max>1000</max>
-<min>-1000</min>
-<name>Y-axis</name>
-<saturation>1</saturation>
-</axis>
-<device_type>6</device_type>
-<dx_device_type>0</dx_device_type>
-<name>gameport device</name>
 </device>
 </rdl>
 <refchg>1</refchg>
@@ -330,7 +382,6 @@
 <reschg>1</reschg>
 <rng>1</rng>
 <rts>1</rts>
-<sbs>100000</sbs>
 <sce>
 <idv>
 <device_type>3</device_type>
@@ -373,7 +424,7 @@
 <offset>3</offset>
 <offset>57</offset>
 </idv>
-<sfn>C:\Users\youcai\Desktop\Eyetracking\Modified_623\2013-2-20 V2 Greenelab CCeytracker 10-2-12 Youcai 4 Fixed Recog XDAT2 ShortRecog\CC-Switch-Behavioral_Youcai_eyetracker.sce</sfn>
+<sfn>C:\YOUCAI\2015_6_23_CCAB9\CC-Switch-Behavioral_Youcai_eyetracker.sce</sfn>
 </sce>
 <sct>
 <capture_device>
@@ -403,14 +454,17 @@
 <sde>
 <buffer_length>1000</buffer_length>
 <custom_buf>sec_sw</custom_buf>
+<default>1</default>
 <dup_channels>0</dup_channels>
+<ex_period>10</ex_period>
 <halt_on_underrun>1</halt_on_underrun>
-<hw_buffer>0</hw_buffer>
 <max_mix_length>400</max_mix_length>
 <min_mix_length>100</min_mix_length>
 <mixer>dx_software</mixer>
 <rewind_distance>10</rewind_distance>
+<sh_period>0</sh_period>
 <side_speakers>1</side_speakers>
+<use_rewind_distance>0</use_rewind_distance>
 </sde>
 <sdv>Primary Sound Driver</sdv>
 <show_dis>1</show_dis>
@@ -420,7 +474,6 @@
 <smd>16</smd>
 <smr>44100</smr>
 <srs>1</srs>
-<ssb>2000</ssb>
 <sse>
 <s>
 <a></a>

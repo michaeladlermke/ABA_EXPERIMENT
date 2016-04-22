@@ -1,29 +1,50 @@
-#NOTE -- in Youcai version, most of these variables are no longer used
+#NOTE -- These variables can be changed to suit your experiment requirements
 
 # Debugging flags
-$debug = "true";
+$debug = "true"; 
 $debug_takescreenshots = "true";
 
 # Experimental parameters
 $deficientTR = '$TR - 20';		# This gives a little wiggle room so that the experiment will be able to sync to the pulses
 $feedback = 1000;
 $eye_tracking_fixation = 1;		# This is the length of the fixation before every trial
-										# in the eye tracking version
-$eye_tracking_blank = 1;		# This is the blank after a trial in the eye tracking version
-$short_fixation_time = 1000;	# Time duration with cross image before automatically entering into a block's run
+											# in the eye tracking version
+$eye_tracking_blank = 1;			# This is the blank after a trial in the eye tracking version
+$short_fixation_time = 1000;		# Time duration with cross image before automatically entering into a block's run
 $num_blocks_per_run = 3;			# The number of experimental blocks per fMRI run
 $total_runs = 7;						# The number of fMRI runs
-$break_duration = 60;					# seconds
-$spacebar_button = 3;					# seconds
+$break_duration = 60;				# seconds
+$spacebar_button = 3;				# seconds
+
+# 	The FLASHBLOCK variable can be modified to change 
+#	the block you want the flashing target to be present in
+#	To turn off flash, make this variable less than zero
+#	Setting this variable to zero turns the flash on for the practice block
+$flashBlock = 10;
+
+
+# INFORMED OR UNINFORMED EXPERIMENT
+#	These options allow you to set the experiment to inform a test taker
+#	that patterns will repeat themselves and that the patterns have switched
+#	If switched = 1, then informed must be set to 1 as well to have the screen appear
+$informed = 1;		#when set to "1", the test taker will be informed when a pattern repeats
+$switched = 1;		#when set to "1", the test taker will be informed when the pattern switches
+
+#	The text below is what will appear on the informed / switched screens
+#	You can split text to a new line using \n\
+$informedScreen = "THIS IS THE \n\INFORMED SCREEN TEXT";
+$switchedScreen = "THIS IS THE \n\SWITCHED SCREEN TEXT";
+
+# THIS CONTROLS THE FLASHING TARGET IMAGE IN FLASHING BLOCK
+$image_on = 100;	# at block ten, flash the image on this many ms
+$image_off = 50;	# at block ten, flash the image off this many ms
+
 #active buttons = 4;
 #button_codes = 1, 2, 3, 4;
 # Things you should only change if you know what you're doing
 $num_lists = 20;
 
 
-# THIS CONTROLS THE FLASHING TARGET IMAGE IN BLOCK TEN
-$image_on = 100;	# at block ten, flash the image on this many ms
-$image_off = 50;	# at block ten, flash the image off this many ms
 
       
 
@@ -192,11 +213,57 @@ trial {
 
    stimulus_event {
 		##### Change location of fixation here:
-		picture { background_color = $gray; text { caption = "+"; font_size = 55; background_color=$gray; font_color=$black;}; x=0; y=0;} fix_dot;
+		picture { background_color = $gray; text { 
+			caption = "+"; 
+			font_size = 55; 
+			background_color=$gray; 
+			font_color=$black;
+		}; x=0; y=0;} fix_dot;
 		code = "fixation";
    } fixation_event;
 } fixation;
 
+# Informed User Screen
+trial {
+   
+   trial_type = specific_response;
+   terminator_button = 3;
+
+	trial_duration = forever;
+
+   stimulus_event {
+		picture { 
+			background_color = $gray; 
+		text { 
+			caption = $informedScreen; 
+			font_size = 25; 
+			background_color=$gray; 
+			font_color=$black;
+		}; x=0; y=0;} informed_text;
+		code = "informed";
+   } informed_event;
+} informed;
+
+# Switched Pattern User Screen
+trial {
+   
+   trial_type = specific_response;
+   terminator_button = 3;
+
+	trial_duration = forever;
+
+   stimulus_event {
+		picture { 
+			background_color = $gray; 
+		text { 
+			caption = $switchedScreen; 
+			font_size = 25; 
+			background_color=$gray; 
+			font_color=$black;
+		}; x=0; y=0;} switched_text;
+		code = "switched";
+   } switched_event;
+} switched;
 
 
 trial {

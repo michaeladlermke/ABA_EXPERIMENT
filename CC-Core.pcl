@@ -1,5 +1,13 @@
 string version = get_sdl_variable("Version");
 
+# 	The FLASHBLOCK variable can be modified to change 
+#	the block you want the flashing target to be present in
+int flashBlock = int(get_sdl_variable("flashBlock"));
+
+# 	Check for whether the user should be informed of repeats or pattern switches
+int isInformed = int(get_sdl_variable("informed"));
+int isSwitched = int(get_sdl_variable("switched"));
+
 array <bitmap> t[3][5];  		# [Direction][Color]
 array <bitmap> l[4][4];  		# [Direction][Color]
 array <int> tcolor[8][6]; 		# Color to make the T in this position 
@@ -144,7 +152,7 @@ end;
 
 
 ## CHUNOLD -- KEEP
-sub int chunold_10 ( int number ) begin
+sub int chunold_flash ( int number ) begin
 	int correct_10;
 	
 	#correct = random(1,2);
@@ -268,6 +276,12 @@ sub run_block(int run, int block, int trial_num_start) begin
 		if(pseudo_list[trial_num]!=0) then
 			if eye_tracker_version then 
 				blank.present();
+				if isInformed == 1 then
+					informed.present();						
+						if isSwitched == 1 then
+							switched.present();
+						end;
+				end;
 				short_fixation.present(); 
 			end;
 			
@@ -320,6 +334,12 @@ sub run_block(int run, int block, int trial_num_start) begin
 			if eye_tracker_version then 
 				full_blank.present();
 			else
+				if isInformed == 1 then
+					informed.present();						
+						if isSwitched == 1 then
+							switched.present();
+						end;
+				end;
 				fixation.present();
 			end;
 		end;
@@ -343,10 +363,16 @@ sub run_block_10(int run, int block, int trial_num_start) begin
 		if(pseudo_list[trial_num]!=0) then
 			if eye_tracker_version then 
 				blank.present();
+				if isInformed == 1 then
+					informed.present();						
+						if isSwitched == 1 then
+							switched.present();
+						end;
+				end;
 				short_fixation.present(); 
 			end;
-				#at this point, call chunold_10 (in CC_Core.pcl), which is only for block ten
-				exp_trial_correct_resp = chunold_10(pseudo_list[trial_num]);
+				#at this point, call chunold_flash (in CC_Core.pcl), which is only for flashing block
+				exp_trial_correct_resp = chunold_flash(pseudo_list[trial_num]);
 				exp_event_10.set_target_button(exp_trial_correct_resp);
 				
 				
@@ -395,6 +421,12 @@ sub run_block_10(int run, int block, int trial_num_start) begin
 			if eye_tracker_version then 
 				full_blank.present();
 			else
+				if isInformed == 1 then
+					informed.present();						
+						if isSwitched == 1 then
+							switched.present();
+						end;
+				end;
 				fixation.present();
 			end;
 		end;
@@ -419,6 +451,12 @@ sub run_block_recog(int run, int block, int trial_num_start) begin
 		if(pseudo_list[trial_num]!=0) then
 			if eye_tracker_version then 
 				blank.present();
+				if isInformed == 1 then
+					informed.present();						
+						if isSwitched == 1 then
+							switched.present();
+						end;
+				end;
 				short_fixation.present(); 
 			end;
 			
@@ -468,6 +506,12 @@ sub run_block_recog(int run, int block, int trial_num_start) begin
 			if eye_tracker_version then 
 				full_blank.present();
 			else
+				if isInformed == 1 then
+					informed.present(); 
+						if isSwitched == 1 then
+						switched.present();
+						end;
+				end;
 				fixation.present();
 			end;
 		end;

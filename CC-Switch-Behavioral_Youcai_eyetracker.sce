@@ -28,11 +28,6 @@ end;
 
 include "CC-Core.pcl";
 
-
-# 	The FLASHBLOCK variable can be modified to change 
-#	the block you want the flashing target to be present in
-int flashBlock = 4;
-
 totalruns = 1;
 numblocksperrun = 27;
 
@@ -106,7 +101,7 @@ string start_text = "Subject: " + Subject + "\nCurrent Run: " + string(CurrentRu
 		elseif (last_resp.button() == 2) then
 			recog_instruct_3.present();
 			run_block_recog(1,28,649);		
-		end;
+		end;	
 
 		
 		
